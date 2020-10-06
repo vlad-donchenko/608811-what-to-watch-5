@@ -5,6 +5,8 @@ import Main from "../main/main.jsx";
 import Login from "../login/login.jsx";
 import MyList from "../my-list/my-list.jsx";
 import Movie from "../movie/movie.jsx";
+import Review from "../rewiew/review.jsx";
+import MoviePlayer from "../movie-player/movie-player";
 
 const App = ({movie}) => {
 
@@ -37,6 +39,20 @@ const App = ({movie}) => {
           path="/films/:id"
           render={(ownProps) => (
             <Movie ownProps={ownProps}/>
+          )}
+        />
+        <Route
+          exact
+          path="/films/:id/review"
+          render={(ownProps) => (
+            <Review ownProps={ownProps}/>
+          )}
+        />
+        <Route
+          exact
+          path="/player/:id"
+          render={(ownProps) => (
+            <MoviePlayer ownProps={ownProps}/>
           )}
         />
       </Switch>
