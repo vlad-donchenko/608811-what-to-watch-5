@@ -8,7 +8,7 @@ import Movie from "../movie/movie.jsx";
 import Review from "../rewiew/review.jsx";
 import MoviePlayer from "../movie-player/movie-player";
 
-const App = ({movie}) => {
+const App = ({movie, movieList}) => {
 
   return (
     <BrowserRouter>
@@ -17,7 +17,7 @@ const App = ({movie}) => {
           exact
           path="/"
           render={() => (
-            <Main movie={movie}/>
+            <Main movie={movie} movieList={movieList}/>
           )}
         />
         <Route
@@ -62,8 +62,8 @@ const App = ({movie}) => {
 
 App.propTypes = {
   movie: PropTypes.shape({
-    genre: PropTypes.string,
-    releaseDate: PropTypes.string
+    genre: PropTypes.string.isRequired,
+    releaseDate: PropTypes.string.isRequired
   })
 };
 
