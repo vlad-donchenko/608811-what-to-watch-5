@@ -5,7 +5,7 @@ import Main from "../main/main.jsx";
 import Login from "../login/login.jsx";
 import MyList from "../my-list/my-list.jsx";
 import Movie from "../movie/movie.jsx";
-import Review from "../rewiew/review.jsx";
+import CreateReview from "../create-review/create-review.jsx";
 import MoviePlayer from "../movie-player/movie-player";
 
 const App = ({movie, movieList}) => {
@@ -45,7 +45,7 @@ const App = ({movie, movieList}) => {
           exact
           path="/films/:id/review"
           render={(ownProps) => (
-            <Review ownProps={ownProps}/>
+            <CreateReview ownProps={ownProps}/>
           )}
         />
         <Route
@@ -64,7 +64,8 @@ App.propTypes = {
   movie: PropTypes.shape({
     genre: PropTypes.string.isRequired,
     releaseDate: PropTypes.string.isRequired
-  })
+  }),
+  movieList: PropTypes.array.isRequired
 };
 
 export default App;

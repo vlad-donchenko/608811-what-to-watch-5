@@ -3,6 +3,7 @@ import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
 
 const Movie = () => {
+
   return (
     <React.Fragment>
       <section className="movie-card movie-card--full">
