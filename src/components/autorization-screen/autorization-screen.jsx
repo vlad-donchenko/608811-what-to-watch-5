@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = () => {
+const AuthorizationScreen = () => {
   return (
     <div className="user-page">
       <header className="page-header user-page__head">
@@ -50,4 +50,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AuthorizationScreen;

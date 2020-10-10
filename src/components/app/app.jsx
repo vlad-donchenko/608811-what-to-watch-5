@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import PropTypes from "prop-types";
-import Main from "../main/main.jsx";
-import Login from "../login/login.jsx";
+import MainScreen from "../main-screen/main-screen.jsx";
+import AuthorizationScreen from "../autorization-screen/autorization-screen.jsx";
 import MyList from "../my-list/my-list.jsx";
 import Movie from "../movie/movie.jsx";
 import CreateReview from "../create-review/create-review.jsx";
@@ -17,14 +17,14 @@ const App = ({movie, movieList}) => {
           exact
           path="/"
           render={() => (
-            <Main movie={movie} movieList={movieList}/>
+            <MainScreen movie={movie} movieList={movieList}/>
           )}
         />
         <Route
           exact
           path="/login"
           render={() => (
-            <Login/>
+            <AuthorizationScreen/>
           )}
         />
         <Route

@@ -4,7 +4,7 @@ import Header from "../header/header.jsx";
 import MovieList from "../movie-list/movie-list.jsx";
 import Footer from "../footer/footer.jsx";
 
-const Main = ({movie, movieList}) => {
+const MainScreen = ({movie, movieList}) => {
   const {genre, releaseDate} = movie;
   return (
     <React.Fragment>
@@ -98,11 +98,11 @@ const Main = ({movie, movieList}) => {
   );
 };
 
-Main.propTypes = {
+MainScreen.propTypes = {
   movie: PropTypes.shape({
     genre: PropTypes.string,
     releaseDate: PropTypes.string
   })
 };
 
-export default Main;
+export default MainScreen;
