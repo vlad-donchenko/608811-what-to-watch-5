@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
-const MovieCard = ({id, name, previewImage}) => {
+const MovieCardSmall = ({id, name, previewImage}) => {
 
   return (
     <article className="small-movie-card catalog__movies-card">
@@ -18,10 +18,10 @@ const MovieCard = ({id, name, previewImage}) => {
   );
 };
 
-MovieCard.propTypes = {
+MovieCardSmall.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   previewImage: PropTypes.string.isRequired
 };
 
-export default MovieCard;
+export default MovieCardSmall;

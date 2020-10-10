@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
 
-const Movie = () => {
+const MovieDetailsScreen = () => {
 
   return (
     <React.Fragment>
@@ -139,4 +139,4 @@ const Movie = () => {
   );
 };
 
-export default Movie;
+export default MovieDetailsScreen;

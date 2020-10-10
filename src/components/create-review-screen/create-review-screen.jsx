@@ -1,6 +1,6 @@
 import React from "react";
 
-class CreateReview extends React.PureComponent {
+class CreateReviewScreen extends React.PureComponent {
   constructor(props) {
     super(props);
   }
@@ -83,4 +83,4 @@ class CreateReview extends React.PureComponent {
   }
 }
 
-export default CreateReview;
+export default CreateReviewScreen;

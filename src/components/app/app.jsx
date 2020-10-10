@@ -3,10 +3,10 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import PropTypes from "prop-types";
 import MainScreen from "../main-screen/main-screen.jsx";
 import AuthorizationScreen from "../autorization-screen/autorization-screen.jsx";
-import MyList from "../my-list/my-list.jsx";
-import Movie from "../movie/movie.jsx";
-import CreateReview from "../create-review/create-review.jsx";
-import MoviePlayer from "../movie-player/movie-player";
+import MyListScreen from "../my-list-screen/my-list-screen.jsx";
+import MovieDetailsScreen from "../movie-details-screen/movie-details-screen.jsx";
+import CreateReviewScreen from "../create-review-screen/create-review-screen.jsx";
+import MoviePlayerScreen from "../movie-player-screen/movie-player-screen.jsx";
 
 const App = ({movie, movieList}) => {
 
@@ -31,28 +31,28 @@ const App = ({movie, movieList}) => {
           exact
           path="/mylist"
           render={() => (
-            <MyList/>
+            <MyListScreen/>
           )}
         />
         <Route
           exact
           path="/films/:id"
           render={(ownProps) => (
-            <Movie ownProps={ownProps}/>
+            <MovieDetailsScreen ownProps={ownProps}/>
           )}
         />
         <Route
           exact
           path="/films/:id/review"
           render={(ownProps) => (
-            <CreateReview ownProps={ownProps}/>
+            <CreateReviewScreen ownProps={ownProps}/>
           )}
         />
         <Route
           exact
           path="/player/:id"
           render={(ownProps) => (
-            <MoviePlayer ownProps={ownProps}/>
+            <MoviePlayerScreen ownProps={ownProps}/>
           )}
         />
       </Switch>
