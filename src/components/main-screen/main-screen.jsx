@@ -13,7 +13,7 @@ const MainScreen = ({genreList, promo, movieList}) => {
         <section className="catalog">
           <h2 className="catalog__title visually-hidden">Catalog</h2>
           <GenreList genreList={genreList}/>
-          <MovieList movieList={movieList}/>
+          <MovieList movieList={movieList.slice(0, 20)}/>
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>
           </div>
