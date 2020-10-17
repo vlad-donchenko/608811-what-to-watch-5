@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 import App from "./components/app/app.jsx";
-import {formatReleaseDate} from "./utils";
+import {movies} from "./mock/mock";
+import {promo} from "./mock/promo";
+import {GENRE_LIST} from "./components/const";
 
-const movie = {
-  genre: `Drama`,
-  releaseDate: formatReleaseDate(`2020-09-28 18:02Z`)
-};
-
-ReactDom.render(<App movie={movie}/>, document.querySelector(`#root`));
+ReactDom.render(<App genreList={GENRE_LIST} promo={promo} movieList={movies}/>, document.querySelector(`#root`));
