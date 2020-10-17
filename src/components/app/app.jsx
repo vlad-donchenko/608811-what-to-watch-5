@@ -8,7 +8,7 @@ import MovieDetailsScreen from "../movie-details-screen/movie-details-screen.jsx
 import CreateReviewScreen from "../create-review-screen/create-review-screen.jsx";
 import MoviePlayerScreen from "../movie-player-screen/movie-player-screen.jsx";
 
-const App = ({movie, movieList}) => {
+const App = ({genreList, promo, movieList}) => {
 
   return (
     <BrowserRouter>
@@ -17,7 +17,7 @@ const App = ({movie, movieList}) => {
           exact
           path="/"
           render={() => (
-            <MainScreen movie={movie} movieList={movieList}/>
+            <MainScreen genreList={genreList} promo={promo} movieList={movieList}/>
           )}
         />
         <Route
@@ -61,11 +61,27 @@ const App = ({movie, movieList}) => {
 };
 
 App.propTypes = {
-  movie: PropTypes.shape({
+  promo: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    posterImage: PropTypes.string.isRequired,
+    previewImage: PropTypes.string.isRequired,
+    backgroundImage: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    scoresCount: PropTypes.number.isRequired,
+    director: PropTypes.string.isRequired,
+    starring: PropTypes.array.isRequired,
+    runTime: PropTypes.number.isRequired,
     genre: PropTypes.string.isRequired,
-    releaseDate: PropTypes.string.isRequired
+    released: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
+    isFavorite: PropTypes.bool.isRequired,
+    videoLink: PropTypes.string.isRequired,
+    previewVideoLink: PropTypes.string.isRequired
   }),
-  movieList: PropTypes.array.isRequired
+  movieList: PropTypes.array.isRequired,
+  genreList: PropTypes.array.isRequired
 };
 
 export default App;
