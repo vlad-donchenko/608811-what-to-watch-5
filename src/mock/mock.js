@@ -377,7 +377,7 @@ const movies = [
     id: 21,
     isFavorite: false,
     videoLink: `http://media.xiph.org/mango/tears_of_steel_1080p.webm`,
-    previewVideoLink: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`
+    previewVideoLink: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   }, {
     name: `Gangs of new york`,
     posterImage: `https://htmlacademy-react-3.appspot.com/wtw/static/film/poster/Gangs_of_New_York_Poster.jpg`,
@@ -431,7 +431,7 @@ const movies = [
     id: 24,
     isFavorite: false,
     videoLink: `http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4`,
-    previewVideoLink: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`
+    previewVideoLink: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   }, {
     name: `Legend`,
     posterImage: `https://htmlacademy-react-3.appspot.com/wtw/static/film/poster/Legend.jpg`,
@@ -449,7 +449,7 @@ const movies = [
     id: 25,
     isFavorite: false,
     videoLink: `http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4`,
-    previewVideoLink: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`
+    previewVideoLink: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   }];
 
 export {movies};
